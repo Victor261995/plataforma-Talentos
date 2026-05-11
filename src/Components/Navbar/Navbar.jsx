@@ -1,33 +1,46 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { NavbarStyled, logoStyles } from './NavbarStyles';
-//import Logo from '../assets/logo.png';
+// Navbar.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+
+import {
+  NavbarStyled,
+  Left,
+  LogoCircle,
+  Title,
+  NavLinks,
+  Buttons,
+  LoginButton,
+  RegisterButton,
+  MobileButton,
+} from "./NavbarStyles";
 
 const Navbar = () => {
   return (
     <NavbarStyled>
-      <div className="Logo">
-       {/* <Link to="/">
-          <img src={Logo} alt="Agencia de baile" style={logoStyles} />
-        </Link>*/}
-      </div>
+      <Left>
+        {/*<LogoCircle>T</LogoCircle>*/}
 
-      <div className="Title">
-        <h1>Agencia de Talentos</h1>
-      </div>
-   
-     
-      <div className="NavLinks">
+        <Title>
+          <h1>Talent Connect</h1>
+          <span>CASTINGS & ARTISTS</span>
+        </Title>
+      </Left>
+
+      <NavLinks>
         <Link to="/">Inicio</Link>
         <Link to="/artistas">Artistas</Link>
         <Link to="/castings">Castings</Link>
         <Link to="/contacto">Contacto</Link>
-      </div>
+      </NavLinks>
+
+      <Buttons>
+        <LoginButton>Login</LoginButton>
+
+        <RegisterButton>Registrarse</RegisterButton>
+      </Buttons>
+
+      <MobileButton>☰</MobileButton>
     </NavbarStyled>
-
-
-
-
   );
 };
 
