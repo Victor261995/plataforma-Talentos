@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import Artistas from "../pages/Artistas/Artistas";
 import Castings from "../pages/Castings/Castings";
 import Contacto from "../pages/Contact/Contacto";
+import Registro from "../pages/Registro/Register";
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
       <Route path="/artistas" element={<Artistas />} />
       <Route path="/castings" element={<Castings />} />
       <Route path="/contacto" element={<Contacto />} />
+      <Route path="/registro" element={<Registro />} />
     </Routes>
   );
 };
