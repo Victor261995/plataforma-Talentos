@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Container, FormWrapper, Form, Label, Input, RoleGroup, 
-    CardLabel, SubmitButton } from "./RegisterStyles";
+    CardLabel, SubmitButton, RedirectText, StyledLink } from "./RegisterStyles";
 
 export function Register() {
     const [formObject, setFormObject] = useState({
@@ -71,10 +70,10 @@ export function Register() {
 
                     <SubmitButton type="submit">Crear cuenta</SubmitButton>
 
-                    <p style={{ display: "flex", justifyContent: "center", color: "#888", gap: "5px", fontSize: "14px", marginTop: "20px" }}>
+                    <RedirectText>
                         ¿Ya tienes cuenta?
-                        <Link to="/login" style={{ color: "#d4a373", textDecoration: "none", fontWeight: "bold" }}>Entra</Link>
-                    </p>
+                        <StyledLink to="/login">Entra</StyledLink>
+                    </RedirectText>
                 </Form>
             </FormWrapper>
             

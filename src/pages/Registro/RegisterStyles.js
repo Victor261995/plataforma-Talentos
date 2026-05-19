@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const Container = styled.section`
@@ -95,5 +96,24 @@ export const SubmitButton = styled.button`
 
   &:hover {
     background-color: #ff9500;
+  }
+`;
+
+export const RedirectText = styled.p`
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #888;
+`;
+
+export const StyledLink = styled(Link)`
+  color: #ff7a00;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
   }
 `;
