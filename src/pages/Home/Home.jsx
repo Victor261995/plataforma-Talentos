@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Hero,
@@ -22,6 +23,8 @@ import {
 } from "./HomeStyles";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       {/* HERO */}
@@ -45,8 +48,12 @@ const Home = () => {
           </Description>
 
           <ButtonGroup>
-            <PrimaryButton>Registrarse</PrimaryButton>
-            <SecondaryButton>Iniciar Sesión</SecondaryButton>
+            <PrimaryButton onClick={() => navigate("/registro")}>
+              Registrarse
+              </PrimaryButton>
+            <SecondaryButton onClick={() => navigate("/login")}>
+              Iniciar Sesión
+              </SecondaryButton>
           </ButtonGroup>
         </Left>
 
