@@ -58,13 +58,16 @@ const Home = () => {
             alt=""
           />
 
-          <FloatingCard>
+    {/*      <FloatingCard>
             <p>Castings activos</p>
             <h3>+120</h3>
           </FloatingCard>
-
-          <JoinCircle>JOIN NOW</JoinCircle>
+*/}
+       {/*   <JoinCircle>JOIN NOW</JoinCircle>*/}
         </Right>
+      
+
+
       </Hero>
 
       {/* FEATURES */}
