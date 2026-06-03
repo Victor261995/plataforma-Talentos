@@ -13,8 +13,12 @@ import {
   RegisterButton,
   MobileButton,
 } from "./NavbarStyles";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+ 
+  const navigate = useNavigate();
+
   return (
     <NavbarStyled>
       <Left>
@@ -34,9 +38,9 @@ const Navbar = () => {
       </NavLinks>
 
       <Buttons>
-        <LoginButton>Login</LoginButton>
+        <LoginButton onClick={() => navigate("/login")}>Login</LoginButton>
 
-        <RegisterButton>Registrarse</RegisterButton>
+        <RegisterButton onClick={() => navigate("/registro")}>Registrarse</RegisterButton>
       </Buttons>
 
       <MobileButton>☰</MobileButton>
